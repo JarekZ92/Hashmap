@@ -8,4 +8,10 @@ let hashMap = function() {
         this.inisdeMap[key] = value
         this.numberOfItems++
     }
+    this.checkMapKey = function(key) {
+        return (key in this.inisdeMap)
+    }
+    this.getTheValue = function(key){
+        return (key in this.inisdeMap) ? this.inisdeMap[key] : null
+    }
 }
