@@ -20,5 +20,13 @@ let hashMap = function() {
             this.numberOfItems--
         }
     }
+    this.returValuesInMap = function() {
+        let score = new Array()
+        for(let key of Object.keys(this.inisdeMap)){
+            score.push(this.inisdeMap[key])
+        }
+        return(score.length > 0) ? score : null
+    }
+    
 
 }
