@@ -27,6 +27,8 @@ let hashMap = function() {
         }
         return(score.length > 0) ? score : null
     }
-    
-
+    this.clearItemsFromMap = function(){
+        this.inisdeMap = {}
+        this.numberOfItems = 0
+    }
 }
