@@ -14,4 +14,11 @@ let hashMap = function() {
     this.getTheValue = function(key){
         return (key in this.inisdeMap) ? this.inisdeMap[key] : null
     }
+    this.removeItemInMap = function(key) {
+        if(key in this.inisdeMap) {
+            delete this.inisdeMap[key]
+            this.numberOfItems--
+        }
+    }
+
 }
