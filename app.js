@@ -32,3 +32,15 @@ let hashMap = function() {
         this.numberOfItems = 0
     }
 }
+
+let map = new hashMap()
+
+map.addToMap('country', 1)
+map.addToMap('city', 20)
+map.addToMap('district', 5)
+map.addToMap('buildings', 50)
+
+console.log(map.getTheValue('city'))
+console.log(map.mapSize())
+console.log(map.returValuesInMap())
+
